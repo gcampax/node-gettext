@@ -30,6 +30,21 @@ var gt = new Gettext();
 
 ### Add a language
 
+*loadTextdomainDirectory(domain, directory)*
+
+Load from a *MO* file
+
+```js
+gt.setLocale('de_DE');
+var fileDirectory = './locale/message/';
+gt.addTextdomain("message", fileDirectory); 
+// loads ./locale/message/de_DE.mo or ./locale/message/de.mo
+```
+
+Plural rules are automatically detected from the language code
+
+### Add a language
+
 *addTextdomain(domain, file)*
 
 Language data needs to be in the Buffer format - it can be either contents of a *MO* or *PO* file.
