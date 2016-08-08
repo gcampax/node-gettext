@@ -57,7 +57,21 @@ gt.addTextdomain("message");
 gt.setTranslation("message", false, "hello!", "tere!");
 ```
 
-### Check or change default language
+### Check or change default locale
+
+*setLocale(domain)*
+
+```js
+gt.setLocale("de");
+```
+
+The function also returns the current locale value
+
+```js
+var curlang = gt.getLocale();
+```
+
+### Check or change default domain
 
 *textdomain(domain)*
 
