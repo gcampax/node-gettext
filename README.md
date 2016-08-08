@@ -59,7 +59,7 @@ gt.setTranslation("message", false, "hello!", "tere!");
 
 ### Check or change default locale
 
-*setLocale(domain)*
+*setLocale(locale)*
 
 ```js
 gt.setLocale("de");
