@@ -35,7 +35,7 @@ var gt = new Gettext();
 Load from a *MO* file
 
 ```js
-gt.setLocale('de_DE');
+gt.setlocale('de_DE');
 var fileDirectory = './locale/message/';
 gt.addTextdomain("message", fileDirectory); 
 // loads ./locale/message/de_DE.mo or ./locale/message/de.mo
@@ -74,10 +74,10 @@ gt.setTranslation("message", false, "hello!", "tere!");
 
 ### Check or change default locale
 
-*setLocale(locale)*
+*setlocale(locale)*
 
 ```js
-gt.setLocale("de");
+gt.setlocale("de");
 ```
 
 The function also returns the current locale value
